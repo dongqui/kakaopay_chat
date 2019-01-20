@@ -1,0 +1,37 @@
+#Home-container {
+  width: 40%;
+  margin: 7% auto;
+  border: 1px solid black;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+  border-radius: 2px;
+  overflow: scroll;
+}
+
+.Home-list {
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  padding: 10%;
+  margin: 0;
+}
+
+.Home-list:hover {
+  background-color: lightyellow;
+}
+
+#Home-h1 {
+  background-color: yellow;
+  font-size: 35px;
+  color: black;
+  margin: 0;
+  padding: 5% 0;
+}
+
+#inviteMessage-info {
+  font-size: 16px;
+  color: black;
+}
+#inviteMessage-content {
+  font-size: 35px;
+  color: black;
+}
