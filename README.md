@@ -1,7 +1,7 @@
 ## 빌드 및 실행
 1. npm run setup
 2. npm start
-3. browser 에서 http://localhost:3000 접속
+3. browser 에서 http://localhost:3001 접속
 
 ## 설명
 - React로 client side rendering
