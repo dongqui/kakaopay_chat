@@ -3,7 +3,7 @@ import './Login.css';
 import { Redirect } from 'react-router-dom';
 
 
-const Login = ({isLogin, loginOnchagehandler, loginSubmitHandler }) => {
+const Login = ({isLogin, loginOnchangeHandler, loginSubmitHandler }) => {
 
     if (isLogin) {
       return <Redirect to="/home" />;
@@ -11,7 +11,7 @@ const Login = ({isLogin, loginOnchagehandler, loginSubmitHandler }) => {
     return (
       <div id="Login-Container">
         <h1 id="Login-h1">Kakao Chat</h1>
-        <input onChange={loginOnchagehandler} id="Login-Input" placeholder="ID를 입력해주세요"/>
+        <input onChange={loginOnchangeHandler} id="Login-Input" placeholder="ID를 입력해주세요"/>
         <button onClick={loginSubmitHandler}>Login</button>
       </div>
     );

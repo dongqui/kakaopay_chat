@@ -23,9 +23,9 @@ describe('app', () => {
     expect(app.state().socket).toEqual({a: 'a'});
   });
 
-  it('loginOnchagehandler should set userId state', () => {
+  it('loginOnchangeHandler should set userId state', () => {
     const event = {target: {value: 'a'}};
-    app.instance().loginOnchagehandler(event);
+    app.instance().loginOnchangeHandler(event);
     expect(app.state().userId).toBe('a');
   });
 

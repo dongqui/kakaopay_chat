@@ -24,7 +24,7 @@ class App extends Component {
     this.setState({ isLogin, socket })
   };
 
-  loginOnchagehandler = (e) => {
+  loginOnchangeHandler = (e) => {
     this.setState({userId: e.target.value})
   };
 
@@ -53,7 +53,7 @@ class App extends Component {
             <Route path="/login" render={() =>
               <Login
                 loginSubmitHandler={this.loginSubmitHandler}
-                loginOnchagehandler={this.loginOnchagehandler}
+                loginOnchangeHandler={this.loginOnchangeHandler}
                 isLogin={this.state.isLogin}
               />}/>
           </Switch>
