@@ -10,7 +10,7 @@ const Login = ({isLogin, loginOnchagehandler, loginSubmitHandler }) => {
     }
     return (
       <div id="Login-Container">
-        <h1 id="Login-h1">KakaoPay Chat</h1>
+        <h1 id="Login-h1">Kakao Chat</h1>
         <input onChange={loginOnchagehandler} id="Login-Input" placeholder="ID를 입력해주세요"/>
         <button onClick={loginSubmitHandler}>Login</button>
       </div>
