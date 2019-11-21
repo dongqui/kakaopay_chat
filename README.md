@@ -1,7 +1,7 @@
 ## 빌드 및 실행
 1. npm run setup
 2. npm start
-3. browser 에서 http://localhost:3000 접속
+3. browser 에서 http://localhost:3001 접속
 
 ## 설명
 - React로 client side rendering
@@ -9,5 +9,5 @@
 - base64 인코딩 방식으로 이미지 입력
 - jest, enzyme을 이용해 unit test 구현 
 
-# 테스트
+## 테스트
 - npm test
