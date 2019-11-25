@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import ChatRoom, {getRoomLocation, getSelectedUser} from './ChatRoom';
+import ChatRoom, { getRoomLocation, getSelectedUser } from './ChatRoom';
 
 describe('ChatRoom', () => {
 

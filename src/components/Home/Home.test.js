@@ -35,17 +35,17 @@ describe('Home', () => {
 
   it('getRoomListCallBack should set roomList state', () => {
     expect(home.state().roomList).toEqual([]);
-    home.instance().getRoomListCallBack(['a', 'b', 'c']);
+    home.instance().getRoomListCallback(['a', 'b', 'c']);
     expect(home.state().roomList).toEqual(['a', 'b', 'c']);
   });
 
-  it('inviteCallBack should set showModal, inviteobj states', () => {
+  it('inviteCallBack should set showModal, inviteObj states', () => {
     const inviteObj = {
       a: 'a'
     };
     expect(home.state().showModal).toBeFalsy();
     expect(home.state().inviteObj).toEqual({});
-    home.instance().inviteCallBack(inviteObj);
+    home.instance().inviteCallback(inviteObj);
     expect(home.state().showModal).toBeTruthy();
     expect(home.state().inviteObj).toEqual({a: 'a'});
   })

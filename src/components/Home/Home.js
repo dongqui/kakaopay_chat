@@ -14,21 +14,21 @@ class Home extends Component {
   componentDidMount() {
     const { socket } = this.props;
     this.getRoomList();
-    socket.on('invite', this.inviteCallBack);
+    socket.on('invite', this.inviteCallback);
   }
 
-  inviteCallBack = (inviteObj) => {
+  inviteCallback = (inviteObj) => {
     this.setState({showModal: true, inviteObj});
   };
 
   getRoomList = () => {
     const { socket } = this.props;
     socket.emit('getRooms');
-    socket.on('getRooms', this.getRoomListCallBack);
+    socket.on('getRooms', this.getRoomListCallback);
   };
 
 
-  getRoomListCallBack = (roomList) => {
+  getRoomListCallback = (roomList) => {
     this.setState({ roomList });
   };
 
